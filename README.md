@@ -23,7 +23,7 @@ Now you need to download the repository:
 
 Now we need to download all python packages:
 
-	pip install -r requirments.txt
+	pip install -r requirements.txt
 
 Now we can run the django server:
 
