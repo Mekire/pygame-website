@@ -1,5 +1,19 @@
 /****      LAYOUT       ****/
+html {
+    height: 100%;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    position: relative;
+}
+
+body {
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100%;
+}
+
 .container{
+	box-sizing: border-box;
 	display: flex;
 	margin: 0 auto;
 	padding: 0 4.16667%;
@@ -26,6 +40,13 @@
     max-width: 33%;
     max-height: 100%;
     padding: 1em
+}
+
+.layout-fill{
+	margin:0;
+	min-height:100%;
+	height:100%;
+	width:100%;
 }
 
 
@@ -68,7 +89,6 @@ body > header{
 
 /****      FOOTER       ****/
 body > footer{
-	/*background-color: #F9EA7A;*/
 	background-color: #56ac89;
 	color: #fff;
 }
@@ -92,4 +112,29 @@ footer a {
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+
+/****      buttons       ****/
+
+
+
+
+/****      landing page       ****/
+.landing-message{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.landing-message p{
+	font-size: 3em;
+	margin: 0 3em;
+	text-align: center;
 }
