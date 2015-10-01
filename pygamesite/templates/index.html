@@ -12,12 +12,11 @@
 
 <!-- The content section is just what is inside the <body> tag, but we can use Django templating language
      In this case, a variable called "username" is passed to the template engine, and we render it thus: -->
-
-<h3>Hello, {{ username }}!<h3>
-
-<!-- And here is an example of a static image: -->
-
-<img src="{% static "images/python.jpg" %}">
+<main class="layout-fill container landing-message">
+	<p>Create 2d games with python using Pygame, a simple and intuitive game library</p>
+	<!-- And here is an example of a static image: -->
+	<img src="{% static "images/python.jpg" %}">
+</main>
 
 {% endblock %}
 

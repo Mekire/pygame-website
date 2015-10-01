@@ -8,14 +8,72 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pygame Website</title>
+	<link rel="stylesheet" href="{% static "css/normalize.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
     {% block css %}
     {% endblock %}
 </head>
 
 <body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="https://www.pygame.org/docs/_static/pygame_tiny.png" alt="">
+			</a>
+			<div class="flex"></div>
+			<nav role="navigation">
+				<ul class="main-menu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Downloads</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">News</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
     <!-- Normal content -->
 	{% block content %}
 	{% endblock %}
+	<footer>
+		<div class="container">
+			<div class="col-3" >
+				<h3>Pygame</h3>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Downloads</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Pygame FAQ</a></li>
+					<li><a href="#">Bugs &amp; Patches</a></li>
+					<li><a href="#">Mercurial</a></li>
+				</ul>
+			</div>
+			<div class="col-3" >
+				<h3>Community</h3>
+				<ul>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Questions</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="https://www.reddit.com/r/pygame/">Reddit</a></li>
+				</ul>
+			</div>
+			<div class="col-3" >
+				<h3>Projects</h3>
+				<ul>
+					<li><a href="#">Recents</a></li>
+					<li><a href="#">Spotlight</a></li>
+					<li><a href="#">Tags</a></li>
+					<li><a href="#">Last comments</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container row copyright">
+			<p>&copy; 2015 - Python Gaming</p>
+		</div>
+	</footer>
 	<!-- Required scripts -->
 	{% block scripts %}
 	{% endblock %}
