@@ -1,0 +1,49 @@
+
+
+Pages needed on site:
+
+Landing Page
+	Shows (prominently) links to other sections.
+	Shows "the news", i.e. whats happening on the site.
+	News can be commented on.
+	If logged in, shows number of unread messages.
+
+Documentation Section
+	Shows all Pygame Docs
+
+Tutorial Section
+	Shows a list of Pygame tutorials
+
+Forums section
+	Shows Pygame forums
+	Forums are split into different sections
+	Conversations are in tree format, rather than linear
+	Members can send each other private messages
+
+Projects Section
+	Shows all the projects, mainly split into different types
+	Projects can be commented on
+
+Profile / Members section
+	List the members and their posts
+	Users can upload an image, description 
+
+About Section
+	Simple area to show website credits
+
+
+Data backend details
+====================
+
+An ITEM is a piece of HTML with a link (the link points to the location of this item on the website), and a date of publication.
+
+A NEWS STORY is just a simple ITEM.
+A PROJECT is a news item with a link (the link to the project).
+A COMMENT is an ITEM with a link to the parent comment and a link to the poster.
+A FORUM is an ITEM.
+A THREAD is an ITEM with a link to the forum.
+A TUTORIAL is an ITEM.
+A MESSAGE is an ITEM with a link to the poster and a receiver
+A MEMBER is the instance of a user. It has email, image, and username.
+Documentation is handled seperatly, as it's generation is from a seperate source.
+
