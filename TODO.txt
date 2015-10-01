@@ -35,15 +35,49 @@ About Section
 Data backend details
 ====================
 
-An ITEM is a piece of HTML with a link (the link points to the location of this item on the website), and a date of publication.
+A NEWS STORY:
+	headline
+	text
+	published date
 
-A NEWS STORY is just a simple ITEM.
-A PROJECT is a news item with a link (the link to the project).
-A COMMENT is an ITEM with a link to the parent comment and a link to the poster.
-A FORUM is an ITEM.
-A THREAD is an ITEM with a link to the forum.
-A TUTORIAL is an ITEM.
-A MESSAGE is an ITEM with a link to the poster and a receiver
-A MEMBER is the instance of a user. It has email, image, and username. A member can be normal, a moderator, or an admin.
+A PROJECT
+	Name
+	text
+	published date
+
+A FORUM
+	name
+	description
+
+A THREAD
+	forum
+	text
+	headline
+	published date
+
+A COMMENT
+	poster
+	parent comment
+	thread
+	published date
+
+A TUTORIAL
+	headline
+	text
+	published date
+	
+A MESSAGE
+	poster
+	receiver
+	read (true/false)
+	published date
+	
+A MEMBER
+	Username
+	Email
+	Avatar
+	joined date
+	rank
+
 Documentation is handled seperatly, as it's generation is from a seperate source.
 
