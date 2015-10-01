@@ -44,6 +44,6 @@ A FORUM is an ITEM.
 A THREAD is an ITEM with a link to the forum.
 A TUTORIAL is an ITEM.
 A MESSAGE is an ITEM with a link to the poster and a receiver
-A MEMBER is the instance of a user. It has email, image, and username.
+A MEMBER is the instance of a user. It has email, image, and username. A member can be normal, a moderator, or an admin.
 Documentation is handled seperatly, as it's generation is from a seperate source.
 
