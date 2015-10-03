@@ -1,4 +1,20 @@
+/**** RESETS ****/
+a {
+    color : inherit;
+}
+a:hover{
+    text-decoration : none;
+    color : inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top : 0;
+}
+ul{
+    margin-bottom : 0;
+}
+
 /****      LAYOUT       ****/
+
 html {
     height: 100%;
     color: rgba(0,0,0,.87);
@@ -7,22 +23,20 @@ html {
 }
 
 body {
-    /*overflow: hidden;*/
     width: 100%;
     height: 100%;
 }
 
-.container{
-	box-sizing: border-box;
-	display: flex;
-	margin: 0 auto;
-	padding: 0 4.16667%;
+h1,h2,h3,h4,h5,h6{
+    margin-bottom :20px;
 }
-
-.row{
-	-ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-direction: row;
+/*apply this to elements that you want to give a certain hover effect to*/
+.trans{
+    transition : all .5s;
+}
+.trans:hover{
+    background : #fff;
+    color : #56ac89;
 }
 
 .flex{
@@ -30,16 +44,6 @@ body {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-}
-
-.col-3{
-	box-sizing: border-box;
-	-webkit-flex: 0 0 33%;
-    -ms-flex: 0 0 33%;
-    flex: 0 0 33%;
-    max-width: 33%;
-    max-height: 100%;
-    padding: 1em
 }
 
 .layout-fill{
@@ -51,19 +55,21 @@ body {
 
 
 /****      MENU       ****/
-body > header{
+header{
 	background-color: #88cc99;
 }
-
-.logo{
- 	display: flex;
-	align-items: center;
+nav{
+	float:right;
+	display : inline-block;
 }
 
 .main-menu {
 	display: flex;
 	margin: 0;
 	padding: 0;
+        color : white;
+	font-weight : bold;
+	font-size:16px;
 }
 
 .main-menu li {
@@ -73,44 +79,31 @@ body > header{
 	padding: 0;
 }
 
-.main-menu li a {
-	color: white;
-	font-weight: bold;
+.main-menu a {
 	padding: 1.7em 0.8em;
 	text-decoration: none;
-	font-size: 16px;
 }
-
-.main-menu li a:hover{
-	background-color: #66AA77;
-}
-
 
 
 /****      FOOTER       ****/
-body > footer{
+footer{
+	padding : 40px;
 	background-color: #56ac89;
-	color: #fff;
+	color : white;
 }
 
-footer ul {
-	padding: 0;
-}
-
-footer li {
-	list-style: none;
-	margin: 0;
-	margin-top: 10px;
-	padding: 0;
-
+footer h3{
+    padding : 10px;
+    border : 1px solid #88cc99;
+    transition : all .5s;
+    text-align : center;
 }
 
 footer a {
-	color: #fff;
 	text-decoration: none;
 }
 
-footer a:hover {
+footer li a:hover {
 	text-decoration: underline;
 }
 
