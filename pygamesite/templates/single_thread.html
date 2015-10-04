@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ thread.headline }}</h1>
+<p>{{ thread.text }}</p>
+
+{% for comment in comments %}
+	<div>
+		<p>{{ comment.text }}</p>
+		<p>Posted by {{ comment.poster }} on {{ comment.published }}</p>
+	</div>
+{% endfor %}
+
+{% endblock %}
+

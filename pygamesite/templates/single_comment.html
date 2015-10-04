@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div>
+	<p>{{ comment.text }}</p>
+	<p>Posted by {{ comment.poster }} on {{ comment.published }}</p>
+</div>
+
+{% endblock %}
+

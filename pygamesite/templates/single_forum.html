@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ forum.name }}</h1>
+<p>{{ thread.description }}</p>
+
+{% for thread in threads %}
+	<div>
+		<p><a href='/forums/thread/{{ thread.id }}/'>{{ thread.headline }}</a></p>
+		<p>Posted by {{ thread.poster }} on {{ thread.published }}</p>
+	</div>
+{% endfor %}
+
+{% endblock %}
+

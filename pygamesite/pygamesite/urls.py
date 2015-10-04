@@ -7,6 +7,8 @@ from views import landingPage
 
 urlpatterns = [
     url(r'^$', landingPage, name='index'),
+    # app pages
+    url(r'^forums/', include('forums.urls')),
     # admin pages
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

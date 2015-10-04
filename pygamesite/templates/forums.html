@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>Welcome to the forums!</h1>
+
+{% for forum in forums %}
+	<div>
+		<h3><a href="{{ forum.id }}/">{{ forum.name }}</a><h3>
+		<p>{{ forum.description }}<p>
+	</div>
+{% endfor %}
+
+{% endblock %}
+
